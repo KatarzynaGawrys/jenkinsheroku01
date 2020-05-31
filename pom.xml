@@ -50,7 +50,7 @@
                 <configuration>
                     <appName>jenkinsheroku01</appName>
                     <processTypes>
-                        <web>java - jar -Dserver.port=$PORT target/${project.build.finalName}.jar</web>
+                        <web>java - jar -Dserver.port=40010 target/${project.build.finalName}.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
