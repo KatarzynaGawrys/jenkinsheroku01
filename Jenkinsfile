@@ -23,5 +23,14 @@ pipeline {
               sh "mvn clean heroku:deploy"
            }
         } */
+        stage('Deploy') {
+            steps {
+                sh """
+                git add .
+                git commit -m "deploy from jenkins" || true
+                git push
+                """
+            }
+        }
    }
 }
