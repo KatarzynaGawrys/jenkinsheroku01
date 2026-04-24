@@ -14,7 +14,7 @@ public class JenkinsherokuApplication {
         SpringApplication.run(JenkinsherokuApplication.class, args);
     }
 
-    @GetMapping
+    @GetMapping()
     public String get() {
         return "Hello Jenkins";
     }
