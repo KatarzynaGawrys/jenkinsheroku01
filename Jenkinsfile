@@ -23,7 +23,7 @@ pipeline {
               sh "mvn clean heroku:deploy"
            }
         } */
-        stage('Deploy') {
+        /* stage('Deploy') {
             steps {
                 sh """
                 git add .
@@ -31,6 +31,6 @@ pipeline {
                 git push
                 """
             }
-        }
+        } */
    }
 }
